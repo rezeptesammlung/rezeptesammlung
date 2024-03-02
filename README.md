@@ -1,4 +1,4 @@
-### Hi there 👋
+Hochqualitative Rezeptesammlung - Alle Rezepte werden zuerst getestet
 
 <!--
 **rezeptesammlung/rezeptesammlung** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
