@@ -73,3 +73,8 @@ h1 {
 ol.split > li:nth-last-of-type(-n+2) {
     list-style-type: disc;
 }
+
+input {
+    padding-left:10px;
+    margin-left:20px;
+}

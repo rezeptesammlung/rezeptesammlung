@@ -10,6 +10,8 @@
 
 <h1>Rezeptsammlung</h1>
 
+<input type="text" id="searchInput" onkeyup="search()" placeholder="Nach Rezept suchen...">
+
 <!-- Italienischer Schokokuchen -->
 <div class="rezept">
     <h2>Italienischer Schokokuchen</h2>
@@ -532,6 +534,23 @@
     // Remove existing divs (excluding the initial title) and append them in sorted order
     for (var i = 1; i < divsArray.length; i++) {
         parent.appendChild(divsArray[i]);
+    }
+
+    // Function to filter recipes based on search input
+    function search() {
+        var input, filter, divs, h2, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        divs = document.querySelectorAll('.rezept');
+        for (var i = 0; i < divs.length; i++) {
+            h2 = divs[i].getElementsByTagName("h2")[0];
+            txtValue = h2.textContent || h2.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                divs[i].style.display = "";
+            } else {
+                divs[i].style.display = "none";
+            }
+        }
     }
 </script>
 
