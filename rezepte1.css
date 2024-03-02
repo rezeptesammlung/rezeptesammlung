@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.rezept {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rezept h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rezept h3 {
+    color: #666;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rezept ul,
+.rezept ol {
+    margin-bottom: 15px;
+}
+
+.rezept li {
+    margin-bottom: 5px;
+}
+
+.rezept ol.split {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.rezept ol.split li {
+    margin-bottom: 5px;
+}
+
+.rezept ol.split .sub {
+    margin-top: -15px;
+}
+
+.rezept p {
+    margin-bottom: 15px;
+}
+
+.rezept ol ul {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.rezept ol ul li {
+    list-style-type: circle;
+}
+
+.rezept strong {
+    font-weight: bold;
+    color: #333;
+}
