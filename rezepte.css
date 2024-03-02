@@ -1,0 +1,55 @@
+@keyframes background1 {
+  0% {background-color:#F2B76A;}
+  17%{background-color:#CABC4F;}
+  33%{background-color:#A3C133;}
+  50%{background-color:#7BC618;}
+  67%{background-color:#A3C133;}
+  83%{background-color:#CABC4F;}
+  100%{background-color:#F2B76A;}
+}
+  
+@keyframes background2 {
+  0% {background-color:#0D4895;}
+  17%{background-color:#3543B0;}
+  33%{background-color:#5C3ECC;}
+  50%{background-color:#8439E7;}
+  67%{background-color:#5C3ECC;}
+  83%{background-color:#3543B0;}
+  100%{background-color:#0D4895;}
+}
+  
+body {
+  animation: background2 15s infinite;
+}
+  
+h1 {
+  text-align: center;
+  color:white;
+}
+  
+ul {
+  display:inline-block;
+  padding-right: 10%;
+  list-style-type: disc;
+}
+  
+ol {
+  display:inline-block;
+}
+  
+.sub {
+  display: block;
+}
+  
+div.rezept {
+  border: 3px solid black;
+  border-radius: 50px;
+  padding: 2%;
+  margin: 1%;
+  animation: background1 15s infinite;
+}
+  
+ol.split > li:nth-last-of-type(-n+2) {
+  list-style-type: disc;
+}
+  
