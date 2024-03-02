@@ -20,7 +20,8 @@ h1 {
 .rezept {
     background-color: #fff;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top:10px;
     border-radius: 5px;
 }
 
@@ -77,4 +78,5 @@ ol.split > li:nth-last-of-type(-n+2) {
 input {
     padding-left:10px;
     margin-left:20px;
+    margin-bottom:
 }
