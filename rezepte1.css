@@ -70,9 +70,9 @@ h1 {
     color: #333;
 }
 
-.sub {
+/* .sub {
     display: block;
-}
+} */
 
 ol.split > li:nth-last-of-type(-n+2) {
     list-style-type: disc;
