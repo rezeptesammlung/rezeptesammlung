@@ -1,20 +1,27 @@
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
 }
 
+/* Recipe styles */
 .rezept {
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .rezept h2 {
@@ -24,51 +31,40 @@ h1 {
 }
 
 .rezept h3 {
-    color: #666;
+    color: #555;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .rezept ul,
 .rezept ol {
-    margin-bottom: 15px;
-}
-
-.rezept li {
-    margin-bottom: 5px;
-}
-
-.rezept ol.split {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-}
-
-.rezept ol.split li {
-    margin-bottom: 5px;
-}
-
-.rezept ol.split .sub {
-    margin-top: -15px;
-}
-
-.rezept p {
-    margin-bottom: 15px;
-}
-
-.rezept ol ul {
-    margin-top: -10px;
     margin-bottom: 10px;
 }
 
-.rezept ol ul li {
-    list-style-type: circle;
+.rezept ul li,
+.rezept ol li {
+    margin-bottom: 5px;
 }
 
-.rezept strong {
-    font-weight: bold;
-    color: #333;
+.rezept .sub {
+    margin-top: 10px;
+    padding-left: 20px;
 }
+
+/* Splitting ordered list */
+/* .split {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+} */
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
 
 /* .sub {
     display: block;
