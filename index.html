@@ -511,5 +511,29 @@
     </ul>
 </div>
 
+<script>
+    // Unglaublich was KI schon kann:
+    // Get all div elements with the class 'rezept'
+    var divs = document.querySelectorAll('.rezept');
+
+    // Convert NodeList to Array for easier manipulation
+    var divsArray = Array.prototype.slice.call(divs);
+
+    // Sort the array based on the text content of the h2 element
+    divsArray.sort(function(a, b) {
+        var titleA = a.querySelector('h2').textContent;
+        var titleB = b.querySelector('h2').textContent;
+        return titleA.localeCompare(titleB);
+    });
+
+    // Get the parent element of the divs
+    var parent = divs[0].parentNode;
+
+    // Remove existing divs (excluding the initial title) and append them in sorted order
+    for (var i = 1; i < divsArray.length; i++) {
+        parent.appendChild(divsArray[i]);
+    }
+</script>
+
 </body>
 </html>
