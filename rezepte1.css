@@ -69,3 +69,11 @@ h1 {
     font-weight: bold;
     color: #333;
 }
+
+.sub {
+    display: block;
+}
+
+ol.split > li:nth-last-of-type(-n+2) {
+    list-style-type: disc;
+}
